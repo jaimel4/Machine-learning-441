@@ -1,0 +1,26 @@
+\begin{tabular}{llllrrrr}
+\toprule
+Dataset & Task & Metric & Strategy & Final $\mu$ & $\pm$CI & AUCLC $\mu$ & $\pm$CI \\
+\midrule
+cls_cancer & classification & acc & uncertainty & 0.9737 & 0.0080 & 141.18 & 1.15 \\
+\midrule
+cls_digits & classification & acc & passive & 0.9442 & 0.0062 & 176.40 & 1.55 \\
+cls_digits & classification & acc & uncertainty & 0.9722 & 0.0044 & 180.45 & 0.76 \\
+cls_digits & classification & acc & sensitivity & 0.9639 & 0.0043 & 180.09 & 0.73 \\
+\multicolumn{8}{l}{\footnotesize Wilcoxon vs passive — Unc: final p=0.00195, AUCLC p=0.00195; Sen: final p=0.00195, AUCLC p=0.00195}\\
+\midrule
+cls_synth_imb & classification & acc & sensitivity & 0.8789 & 0.0059 & 245.24 & 1.74 \\
+\midrule
+reg_california & regression & rmse & passive & 0.7742 & 0.1123 & -384.31 & 44.90 \\
+reg_california & regression & rmse & uncertainty & 0.7459 & 0.0845 & -365.68 & 38.91 \\
+\multicolumn{8}{l}{\footnotesize Wilcoxon vs passive — Unc: final p=0.432, AUCLC p=0.131; Sen: final p=-, AUCLC p=-}\\
+\midrule
+reg_diabetes & regression & rmse & uncertainty & 55.0063 & 2.1636 & -11252.84 & 336.94 \\
+reg_diabetes & regression & rmse & sensitivity & 59.1680 & 2.2499 & -10715.08 & 350.16 \\
+\midrule
+reg_sine & regression & rmse & passive & 0.2177 & 0.0061 & -33.37 & 0.88 \\
+reg_sine & regression & rmse & sensitivity & 0.2407 & 0.0045 & -35.23 & 0.67 \\
+\multicolumn{8}{l}{\footnotesize Wilcoxon vs passive — Unc: final p=-, AUCLC p=-; Sen: final p=0.00195, AUCLC p=0.00195}\\
+\midrule
+\bottomrule
+\end{tabular}

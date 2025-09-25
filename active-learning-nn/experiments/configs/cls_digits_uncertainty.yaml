@@ -1,0 +1,19 @@
+name: cls_digits_uncertainty_mc
+dataset: digits
+seed: 42
+
+model:
+  hidden_dim: 128
+
+train:
+  batch_size: 32
+  lr: 0.01
+  weight_decay: 0.0005
+  early_stopping_patience: 15
+
+al:
+  strategy: uncertainty
+  init_frac: 0.1
+  query_size: 10
+  budget: 200
+  mc_dropout_passes: 10

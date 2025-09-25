@@ -1,0 +1,6 @@
+name: reg_california_uncertainty
+dataset: california
+seed: 42
+model: { hidden_dim: 128, activation: relu }
+train: { batch_size: 128, lr: 0.003, weight_decay: 0.0001, early_stopping_patience: 25 }
+al: { strategy: uncertainty, init_frac: 0.05, query_size: 20, budget: 500, mc_dropout_passes: 10 }

@@ -1,0 +1,19 @@
+name: reg_sine_uncertainty
+dataset: sine
+seed: 42
+model:
+  hidden: 64
+  activation: tanh
+  dropout: 0.00
+train:
+  epochs: 200
+  batch_size: 64
+  lr: 0.01
+  weight_decay: 0.0001
+  early_stopping_patience: 15
+al:
+  strategy: uncertainty
+  init_frac: 0.10
+  query_size: 10
+  budget: 337
+  mc_passes: 15

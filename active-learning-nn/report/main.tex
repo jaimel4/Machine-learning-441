@@ -1,0 +1,64 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{siunitx}
+\usepackage{amsmath}
+\usepackage{float}
+
+\title{Active Learning in Single-Hidden-Layer Neural Networks}
+\author{Jaime Kruger}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We compare passive stochastic gradient descent (SGD) with two active learning (AL) strategies---uncertainty sampling and output sensitivity analysis---for three classification and three function approximation tasks. Using over-parameterised single-hidden-layer MLPs with weight decay and early stopping, we quantify label efficiency via learning curves and area-under-the-learning-curve (AUCLC). Results show when and why AL improves data efficiency and final generalisation.
+\end{abstract}
+
+\section{Introduction}
+Problem framing; motivation for AL (label cost); assignment scope and contributions.
+
+\section{Background}
+\subsection{Passive vs active learning}
+\subsection{Uncertainty sampling}
+\subsection{Sensitivity-based selection}
+\subsection{Regularisation (weight decay) and early stopping}
+\subsection{Evaluation metrics and AUCLC}
+
+\section{Implementation}
+\subsection{Model: Single-hidden-layer MLP}
+Activation choices; loss functions; weight decay.
+\subsection{Training: SGD}
+Learning rate, batch size, patience; implementation specifics.
+\subsection{Active learning strategies}
+Entropy/margin; sensitivity via Jacobian norms; MC-dropout option.
+\subsection{Code structure}
+Brief mapping to repository modules.
+
+\section{Empirical Process}
+\subsection{Datasets}
+3 classification + 3 regression (describe; preprocessing; splits).
+\subsection{Protocol}
+Initial label fraction, query size, budget, repeats (seeds), fixed test set, statistics.
+\subsection{Hyperparameters}
+Hidden size overestimate; $\lambda$ (weight decay) selection; early-stopping.
+\subsection{Performance measures}
+Accuracy / RMSE; AUCLC; calibration where relevant.
+
+\section{Results and Discussion}
+\subsection{Learning curves (mean $\pm$ CI)}
+Insert figures and tables; discuss patterns.
+\subsection{Label efficiency and AUCLC}
+\subsection{When does each AL strategy win?}
+\subsection{Ablations and sensitivity (hidden size, $\lambda$)}
+
+\section{Conclusions}
+Answer which approach performed best and why.
+
+\section*{References}
+Add references to AL, uncertainty sampling, sensitivity analysis, SGD, weight decay, early stopping.
+
+\end{document}

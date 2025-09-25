@@ -1,0 +1,21 @@
+name: cls_digits_passive
+dataset: digits
+seed: 42
+test_size: 0.2
+val_size: 0.2
+
+model:
+  hidden_dim: 128
+  activation: relu
+
+train:
+  batch_size: 32
+  lr: 0.01
+  weight_decay: 0.0005
+  early_stopping_patience: 15
+
+al:
+  strategy: passive
+  init_frac: 0.1
+  query_size: 10
+  budget: 200

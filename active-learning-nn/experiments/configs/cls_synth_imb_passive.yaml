@@ -1,0 +1,18 @@
+name: cls_synth_imb_passive
+dataset: synth_imb
+seed: 42
+model:
+  hidden: 32
+  activation: tanh
+  dropout: 0.00
+train:
+  epochs: 200
+  batch_size: 64
+  lr: 0.05
+  weight_decay: 0.0001
+  early_stopping_patience: 15
+al:
+  strategy: passive
+  init_frac: 0.10
+  query_size: 10
+  budget: 546

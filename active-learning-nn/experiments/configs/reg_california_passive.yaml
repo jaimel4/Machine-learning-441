@@ -1,0 +1,6 @@
+name: reg_california_passive
+dataset: california
+seed: 42
+model: { hidden_dim: 128, activation: relu }
+train: { batch_size: 64, lr: 0.01, weight_decay: 0.0001, early_stopping_patience: 15 }
+al: { strategy: passive, init_frac: 0.05, query_size: 20, budget: 500 }

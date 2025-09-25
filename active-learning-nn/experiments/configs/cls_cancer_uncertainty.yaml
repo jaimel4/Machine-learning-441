@@ -1,0 +1,17 @@
+name: cls_cancer_uncertainty
+dataset: breast_cancer
+seed: 42
+model:
+  hidden_dim: 64
+  activation: relu
+train:
+  batch_size: 32
+  lr: 0.01
+  weight_decay: 0.001
+  early_stopping_patience: 15
+al:
+  strategy: uncertainty
+  init_frac: 0.1
+  query_size: 5
+  budget: 150
+  mc_dropout_passes: 10

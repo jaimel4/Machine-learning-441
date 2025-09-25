@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.pt
+.venv/
+.env
+.env.*
+*.egg-info/
+build/
+dist/
+
+# Data & results
+data/raw/*
+!data/raw/README.md
+data/processed/*
+experiments/results/*
+!experiments/results/.gitkeep
+
+# VSCode / IDE
+.vscode/
+.idea/
+
+# LaTeX
+report/*.aux
+report/*.log
+report/*.out
+report/*.bbl
+report/*.blg
+report/*.toc
+report/*.synctex.gz
+report/*.pdf

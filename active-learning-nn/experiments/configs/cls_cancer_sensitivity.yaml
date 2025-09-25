@@ -1,0 +1,18 @@
+name: cls_cancer_sensitivity
+dataset: cancer
+seed: 42
+model:
+  hidden: 64
+  activation: relu
+  dropout: 0.10
+train:
+  epochs: 200
+  batch_size: 32
+  lr: 0.01
+  weight_decay: 0.0005
+  early_stopping_patience: 15
+al:
+  strategy: sensitivity
+  init_frac: 0.10
+  query_size: 10
+  budget: 181
