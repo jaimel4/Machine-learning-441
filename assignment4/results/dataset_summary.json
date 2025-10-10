@@ -1,0 +1,47 @@
+{
+  "n_rows": 569,
+  "n_cols": 33,
+  "class_counts": {
+    "0": 357,
+    "1": 212
+  },
+  "missing_per_col": {
+    "diagnosis": 0,
+    "radius_mean": 6,
+    "texture_mean": 5,
+    "perimeter_mean": 2,
+    "area_mean": 6,
+    "smoothness_mean": 2,
+    "compactness_mean": 4,
+    "concavity_mean": 7,
+    "concave_points_mean": 2,
+    "symmetry_mean": 6,
+    "fractal_dimension_mean": 2,
+    "radius_se": 3,
+    "texture_se": 3,
+    "perimeter_se": 4,
+    "area_se": 4,
+    "smoothness_se": 4,
+    "compactness_se": 6,
+    "concavity_se": 5,
+    "concave_points_se": 4,
+    "symmetry_se": 6,
+    "fractal_dimension_se": 7,
+    "radius_worst": 4,
+    "texture_worst": 8,
+    "perimeter_worst": 3,
+    "area_worst": 6,
+    "smoothness_worst": 3,
+    "compactness_worst": 6,
+    "concavity_worst": 5,
+    "concave_points_worst": 2,
+    "symmetry_worst": 2,
+    "fractal_dimension_worst": 0,
+    "gender": 0,
+    "bratio": 0
+  },
+  "duplicated_rows": 0,
+  "zero_variance_cols": [
+    "gender"
+  ]
+}
